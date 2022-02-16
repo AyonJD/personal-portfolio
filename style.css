@@ -211,7 +211,14 @@ nav ul li a i{
   }
   .margin{
     margin-top: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
   }
+  .images{
+    margin-top: -50px;
+  }
+  
 }
 @media screen and (max-width: 594px){
   body{
@@ -223,6 +230,21 @@ nav ul li a i{
   }
   .margin{
     margin-top: 10px;
+  }
+}
+@media screen and (max-width: 450px){
+  .images{
+    margin-top: -100px;
+  }
+}
+@media screen and (max-width: 390px){
+  .images{
+    margin-top: -130px;
+  }
+}
+@media screen and (max-width: 360px){
+  .images{
+    margin-top: -180px;
   }
 }
 
