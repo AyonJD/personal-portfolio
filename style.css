@@ -52,6 +52,20 @@ html,body{
                       5px 5px 5px rgba(0, 0, 0, 0.1);
 }
 /* ========================== */
+/* ===============Mode icon================= */
+.mode-changer img{
+  width: 50px;
+  padding: 20px 0 0 20px;
+  cursor: pointer;
+  position: absolute;
+  transition: all .3s ease-in-out;
+}
+.mode-changer #moon{
+  display: none;
+}
+.mode-changer img:hover{
+  transform: scale(1.2);
+}
 nav>input[type="checkbox"]{
   position: absolute;
   top: 3rem;
@@ -163,5 +177,5 @@ nav ul li a i{
   font-size: 2rem;
   font-weight: 500;
   padding-right: 1rem;
-  color: var(--darkModeText);
 }
+
