@@ -1,3 +1,9 @@
+// Rippels
+$('body').ripples({
+	resolution: 512,
+	dropRadius: 15,
+	perturbance: 0.05,
+});
 // Auto type animation
 let typed = new Typed(".auto-type", {
   strings: ["Ayon Jodder", "UI Designer", "Web Developer"],

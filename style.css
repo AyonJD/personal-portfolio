@@ -179,6 +179,13 @@ nav ul li a i{
   font-weight: 500;
   padding-right: 1rem;
 }
+/* CV button */
+#cv-button{
+  font-size: 1.6rem;
+  background-color: var(--primary);
+  color: var(--darkModeText);
+  padding: 6px 20px;
+}
 
 /* Scrollbar customization */
 ::-webkit-scrollbar{
