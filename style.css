@@ -1,104 +1,102 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    outline: none;
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
 }
-html,body{
-    overflow-x: hidden;
-    font-size: 62.5%;
-    font-family: 'Raleway', sans-serif;
+html,
+body {
+  overflow-x: hidden;
+  font-size: 62.5%;
+  font-family: "Raleway", sans-serif;
 }
-.dark-mode{
-    background-color: var(--darkModeBG);
+.dark-mode {
+  background-color: var(--darkModeBG);
 }
-.dark-mode-text{
+.dark-mode-text {
   color: var(--darkModeText);
 }
-.dark-mode-shadow{
+.dark-mode-shadow {
   box-shadow: var(--darkModeShadow);
 }
-.dark-mode-nav{
+.dark-mode-nav {
   background-color: var(--darkModeBG);
   color: var(--darkModeText);
 }
 
-.light-mode{
-    background-color: var(--lightModeBG);
+.light-mode {
+  background-color: var(--lightModeBG);
 }
-.light-mode-text{
+.light-mode-text {
   color: var(--lightModeText);
 }
-.light-mode-shadow{
+.light-mode-shadow {
   box-shadow: var(--lightModeShadow);
 }
-.light-mode-nav{
+.light-mode-nav {
   background-color: var(--lightModeBG);
   color: var(--lightModeText);
 }
 /* Color */
-:root{
-    --primary: #FF4321;
-    --darkModeBG: #292929;
-    --darkModeText: #fff;
-    --lightModeBG: #edf2fc;
-    --lightModeText: #292929;
-    --darkModeShadow: -3px -3px 2px rgba(133, 133, 133, 0.3),
-                      5px 5px 5px rgba(0, 0, 0, 0.2),
-                      5px 5px 5px rgba(0, 0, 0, 0.2);
-    --lightModeShadow:-3px -3px 2px rgba(177, 177, 177, 0.3),
-                      5px 5px 5px rgba(0, 0, 0, 0.1),
-                      5px 5px 5px rgba(0, 0, 0, 0.1);
+:root {
+  --primary: #ff4321;
+  --darkModeBG: #292929;
+  --darkModeText: #fff;
+  --lightModeBG: #edf2fc;
+  --lightModeText: #292929;
+  --darkModeShadow: -3px -3px 2px rgba(133, 133, 133, 0.3),
+    5px 5px 5px rgba(0, 0, 0, 0.2), 5px 5px 5px rgba(0, 0, 0, 0.2);
+  --lightModeShadow: -3px -3px 2px rgba(177, 177, 177, 0.3),
+    5px 5px 5px rgba(0, 0, 0, 0.1), 5px 5px 5px rgba(0, 0, 0, 0.1);
 }
 /* ========================== */
 /* ===============Mode icon================= */
-.mode-changer img{
+.mode-changer img {
   width: 50px;
   padding: 20px 0 0 20px;
   cursor: pointer;
   position: absolute;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   z-index: 100;
 }
-.mode-changer #moon{
+.mode-changer #moon {
   display: none;
 }
-.mode-changer img:hover{
+.mode-changer img:hover {
   transform: scale(1.2);
 }
-nav>input[type="checkbox"]{
+nav > input[type="checkbox"] {
   position: absolute;
   top: 3rem;
   right: 1rem;
   display: none;
 }
-nav>label{
+nav > label {
   position: absolute;
   top: 3rem;
   right: 1rem;
   z-index: 11;
-  animation: spinner .8s ease infinite forwards 0s;
+  animation: spinner 0.8s ease infinite forwards 0s;
   color: var(--primary);
 }
 /* ==========================*\
       Spinner Animation start
 |*============================*/
-@keyframes spinner{
-  100%{
-      transform: rotate(360deg);
+@keyframes spinner {
+  100% {
+    transform: rotate(360deg);
   }
 }
 /* ==========================*\
       Spinner Animation End
 |*============================*/
-nav>label>#fa-cog{
-font-size: 3.5rem;
-cursor: pointer;
-
+nav > label > #fa-cog {
+  font-size: 3.5rem;
+  cursor: pointer;
 }
-nav ul{
+nav ul {
   /* background-color: var(--lightModeBG); */
   display: inline-block;
   padding: 2rem 3rem;
@@ -110,47 +108,48 @@ nav ul{
   transition: transform 250ms ease-in-out;
   /* box-shadow: var(--lightModeShadow); */
 }
-nav ul li{
+nav ul li {
   list-style: none;
   padding: 2rem;
 }
-nav ul li a{
+nav ul li a {
   /* color: var(--lightModeText); */
   text-decoration: none;
   display: inline-block;
   font-size: 1.8rem;
   font-weight: 700;
-  transition: color .1s ease-in;
+  transition: color 0.1s ease-in;
   text-transform: uppercase;
 }
-nav ul li a.selected,nav ul li a:hover{
+nav ul li a.selected,
+nav ul li a:hover {
   color: var(--primary);
 }
-nav ul li a i{
+nav ul li a i {
   margin-right: 1rem;
 }
-#checkToggler:checked ~ #sideMenu{
+#checkToggler:checked ~ #sideMenu {
   transform: translateX(0);
 }
 /* Nav end */
 /* ========================== */
-.hero-height{
+.hero-height {
   height: 100vh;
   z-index: 1000;
 }
-.images{
+.images {
   height: 100vh;
   width: 100%;
   position: relative;
   overflow: hidden;
   z-index: 2;
 }
-.images img{
+.images img {
   /* right: 100px; */
   bottom: 0;
   transition: all 1s;
 }
-.images #back-image{
+.images #back-image {
   /* max-width: 500px; */
   width: 100%;
   position: absolute;
@@ -158,32 +157,32 @@ nav ul li a i{
   right: 0;
   left: 0;
 }
-.images:hover #back-image{
+.images:hover #back-image {
   transform: translateY(-30px);
 }
-.images:hover .img2{
+.images:hover .img2 {
   transform: translateX(30px);
 }
 /* Type writer */
-.content{
+.content {
   color: var(--primary);
 }
-.content h1{
+.content h1 {
   font-size: 5.5rem;
   font-weight: 600;
 }
-.content span{
+.content span {
   font-size: 5.5rem;
   font-weight: 600;
   color: var(--primary);
 }
-.content p{
+.content p {
   font-size: 2rem;
   font-weight: 500;
   padding-right: 1rem;
 }
 /* CV button */
-#cv-button{
+#cv-button {
   font-size: 1.6rem;
   background-color: var(--primary);
   color: var(--darkModeText);
@@ -192,57 +191,62 @@ nav ul li a i{
   z-index: 100;
 }
 /* Button border animation */
-#cv-button::before{
-  content: '';
+#cv-button::before {
+  content: "";
   height: 0;
   width: 0;
   position: absolute;
   bottom: 0;
   left: 0;
   border: 2px solid transparent;
-  transition: height .2s linear, width .3s linear .2s;
+  transition: height 0.2s linear, width 0.3s linear 0.2s;
 }
-#cv-button:hover::before{
+#cv-button:hover::before {
   height: 100%;
   width: 100%;
   border: 2px solid #fff;
   border-bottom: none;
   border-right: none;
 }
-#cv-button::after{
-  content: '';
+#cv-button::after {
+  content: "";
   height: 0;
   width: 0;
   position: absolute;
   right: 0;
   top: 0;
   border: 2px solid transparent;
-  transition: height .2s linear, width .3s linear .2s;
+  transition: height 0.2s linear, width 0.3s linear 0.2s;
 }
-#cv-button:hover::after{
+#cv-button:hover::after {
   height: 100%;
   width: 100%;
   border: 2px solid #fff;
   border-top: none;
   border-left: none;
 }
-#cv-button:focus{
+#cv-button:focus {
   box-shadow: none;
 }
-#cv-button:hover{
+#cv-button:hover {
   background-color: #b9270e;
 }
 /* Dotted Background */
-.dotted-bg{
-    background: radial-gradient(circle at center, var(--primary) 10%, transparent 20%), transparent;
-    background-size: 19px 18px;
-    height: 30rem;
-    width: 26rem;
-    transform: rotate(45deg);
-    position: absolute;
-    top: -15rem;
-    left: -12rem;
-    z-index: -10;
+.dotted-bg {
+  background: radial-gradient(
+      circle at center,
+      var(--primary) 10%,
+      transparent 20%
+    ),
+    transparent;
+  background-size: 19px 18px;
+  height: 30rem;
+  width: 26rem;
+  transform: rotate(45deg);
+  position: absolute;
+  top: -15rem;
+  left: -12rem;
+  z-index: -10;
 }
 /* Box animation */
 /* .circles{
@@ -333,86 +337,86 @@ nav ul li a i{
       Box Animation
 \*================================ */
 @keyframes boxAnimation {
-  100%{
-      transform: translateY(-20rem) rotate(720deg);
-      border-radius: 50%;
-      opacity: 0;
+  100% {
+    transform: translateY(-20rem) rotate(720deg);
+    border-radius: 50%;
+    opacity: 0;
   }
-} */
+}
+*/
 /* Scrollbar customization */
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   width: 10px;
 }
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
   background: linear-gradient(transparent, #30ff00);
   border-radius: 6px;
 }
-::-webkit-scrollbar-thumb:hover{
-  background: linear-gradient(transparent, #00c6ff)
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(transparent, #00c6ff);
 }
 
-
-
-@media screen and (min-width: 1100px){
-  #back-image{
+@media screen and (min-width: 1100px) {
+  #back-image {
     max-width: 500px;
   }
 }
-@media screen and (max-width: 992px){
-  .img2{
+@media screen and (max-width: 992px) {
+  .img2 {
     transform: translateX(0);
   }
 }
-@media screen and (max-width: 768px){
-  .hero-height{
+@media screen and (max-width: 768px) {
+  .hero-height {
     min-height: 100vh;
     padding: 60px 0;
   }
-  .margin{
+  .margin {
     margin-top: 50px;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
   }
-  .images{
+  .images {
     margin-top: -50px;
   }
-  
 }
-@media screen and (max-width: 594px){
-  body{
+@media screen and (max-width: 594px) {
+  body {
     padding: 0 20px;
   }
-  #type-animation-header{
+  #type-animation-header {
     font-size: 4rem;
   }
-  .auto-type{
+  .auto-type {
     font-size: 3.5rem !important;
   }
-  .type-animation-para{
+  .typed-cursor {
+    font-size: 3.5rem !important;
+  }
+  .type-animation-para {
     font-size: 1rem !important;
   }
-  .mode-changer img{
+  .mode-changer img {
     width: 30px;
     padding: 20px 0;
   }
-  .margin{
+  .margin {
     margin-top: 10px;
   }
 }
-@media screen and (max-width: 450px){
-  .images{
+@media screen and (max-width: 450px) {
+  .images {
     margin-top: -100px;
   }
 }
-@media screen and (max-width: 390px){
-  .images{
+@media screen and (max-width: 390px) {
+  .images {
     margin-top: -130px;
   }
 }
-@media screen and (max-width: 360px){
-  .images{
+@media screen and (max-width: 360px) {
+  .images {
     margin-top: -180px;
   }
 }
-
