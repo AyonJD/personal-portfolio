@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    outline: none;
 }
 html,body{
     overflow-x: hidden;
@@ -185,6 +186,48 @@ nav ul li a i{
   background-color: var(--primary);
   color: var(--darkModeText);
   padding: 6px 20px;
+  position: relative;
+}
+/* Button border animation */
+#cv-button::before{
+  content: '';
+  height: 0;
+  width: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border: 2px solid transparent;
+  transition: height .2s linear, width .3s linear .2s;
+}
+#cv-button:hover::before{
+  height: 100%;
+  width: 100%;
+  border: 2px solid #fff;
+  border-bottom: none;
+  border-right: none;
+}
+#cv-button::after{
+  content: '';
+  height: 0;
+  width: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  border: 2px solid transparent;
+  transition: height .2s linear, width .3s linear .2s;
+}
+#cv-button:hover::after{
+  height: 100%;
+  width: 100%;
+  border: 2px solid #fff;
+  border-top: none;
+  border-left: none;
+}
+#cv-button:focus{
+  box-shadow: none;
+}
+#cv-button:hover{
+  background-color: #b9270e;
 }
 
 /* Scrollbar customization */
