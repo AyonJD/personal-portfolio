@@ -245,7 +245,7 @@ nav ul li a i{
     z-index: -10;
 }
 /* Box animation */
-.circles{
+/* .circles{
   z-index: -100
 }
 .home-content ul{
@@ -338,7 +338,7 @@ nav ul li a i{
       border-radius: 50%;
       opacity: 0;
   }
-}
+} */
 /* Scrollbar customization */
 ::-webkit-scrollbar{
   width: 10px;
