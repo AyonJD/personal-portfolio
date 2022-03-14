@@ -229,7 +229,18 @@ nav ul li a i{
 #cv-button:hover{
   background-color: #b9270e;
 }
-
+/* Dotted Background */
+.dotted-bg{
+    background: radial-gradient(circle at center, var(--primary) 10%, transparent 20%), transparent;
+    background-size: 19px 18px;
+    height: 30rem;
+    width: 26rem;
+    transform: rotate(45deg);
+    position: absolute;
+    top: -15rem;
+    left: -12rem;
+    z-index: -1;
+}
 /* Scrollbar customization */
 ::-webkit-scrollbar{
   width: 10px;
